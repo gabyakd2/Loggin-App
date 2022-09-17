@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://img.freepik.com/foto-gratis/fondo-futurista-abstracto-diseno-3d_1361-3532.jpg?w=1380&t=st=1663377493~exp=1663378093~hmac=20720013e0da3b92eb1cd6bd435224faecb14bc1f078632a16382d27b8f067c6);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 code {
