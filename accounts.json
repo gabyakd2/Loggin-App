@@ -1,0 +1,20 @@
+[
+        {
+            "email": "roots@gmail.com",
+            "image": "https://i1.sndcdn.com/avatars-000617230884-00hg7q-t500x500.jpg",
+            "user": "Roots",
+            "password": "123"
+        },
+        {
+            "email": "gerente1@gmail.com",
+            "image": "https://res.cloudinary.com/bitcharge/image/upload/v1535940305/panda-avatar.png",
+            "user": "Pablo Gerente",
+            "password": "1234"
+        },
+        {
+            "email": "gerente2@gmail.com",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFInsD5TKee1vgtZoaUJkuXEhUwZGawBmwnQ&usqp=CAU",
+            "user": "Gabriel Peralta",
+            "password": "12345"
+        }
+]
