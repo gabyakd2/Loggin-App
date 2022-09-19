@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getUsers, getUsersEmail } from '../actions'
 import { useNavigate } from "react-router-dom";
+import Cookies from "universal-cookie";
 import '../style/Login.css'
 
 
@@ -9,6 +10,7 @@ import '../style/Login.css'
 function Login() {
     const dispatch = useDispatch()
     const navigate = useNavigate()
+    const cookies = new Cookies();
     const usersAcc = useSelector(state => state.users)
     const [ input, setInput ] = useState({
         email: '',
@@ -25,6 +27,7 @@ function Login() {
         e.preventDefault()
         if(userEmailFiltered.length){
             if(userEmailFiltered[0].password === input.password){
+                cookies.set("userEmail", `${input.email}`, { patch: "/" });
                 navigate('/home')
                 dispatch(getUsersEmail(input.email))
             }else{
