@@ -2,19 +2,61 @@
         {
             "email": "roots@gmail.com",
             "image": "https://i1.sndcdn.com/avatars-000617230884-00hg7q-t500x500.jpg",
-            "user": "Roots",
-            "password": "123"
+            "user": "Juan R Noya",
+            "age": "38 years old.",
+            "password": "españa2022",
+            "birthplace": "Spain",
+            "residence": "Argentina",
+            "rol": "Admin"
         },
         {
             "email": "gerente1@gmail.com",
             "image": "https://res.cloudinary.com/bitcharge/image/upload/v1535940305/panda-avatar.png",
-            "user": "Pablo Gerente",
-            "password": "1234"
+            "user": "Maximiliano Costilla",
+            "age": "33 years old.",
+            "password": "mc1990",
+            "birthplace": "Argentina",
+            "residence": "Netherlands",
+            "rol": "Manager"
         },
         {
             "email": "gerente2@gmail.com",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFInsD5TKee1vgtZoaUJkuXEhUwZGawBmwnQ&usqp=CAU",
-            "user": "Gabriel Peralta",
-            "password": "12345"
+            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/10f13510774061.560eadfde5b61.png",
+            "user": "Nicolas Tacchia",
+            "age": "28 years old",
+            "password": "nt1992",
+            "birthplace": "Argentina",
+            "residence": "Portugal",
+            "rol": "Manager"
+        },
+        {
+            "email": "cliente1@gmail.com",
+            "image": "https://data.whicdn.com/images/299530921/original.png",
+            "user": "Javier Ojeda",
+            "age": "24 years old",
+            "password": "jo1996",
+            "birthplace": "Argentina",
+            "residence": "Argentina",
+            "rol": "Client"
+        },
+        {
+            "email": "cliente2@gmail.com",
+            "image": "https://img.freepik.com/vector-premium/lindo-avatar-lobo-azul_79416-81.jpg",
+            "user": "Sebastian Basmachi",
+            "age": "23 years old",
+            "password": "sb1998",
+            "birthplace": "Argentina",
+            "residence": "Norway",
+            "rol": "Client"
+        },
+        {
+            "email": "cliente3@gmail.com",
+            "image": "https://png.pngtree.com/png-vector/20191027/ourlarge/pngtree-cute-cat-avatar-with-a-yellow-background-png-image_1873423.jpg",
+            "user": "Santiago Hubert",
+            "age": "28 years old",
+            "password": "sh1995",
+            "birthplace": "Argentina",
+            "residence": "Russia",
+            "rol": "Client"
         }
 ]

@@ -1,0 +1,54 @@
+h1 {
+    color: white;
+    margin-left: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: -30px;
+}
+
+.tittle {
+    text-shadow: 1px 1px rgb(137, 78, 78);
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.container {
+    width: 500px;
+    background: rgba(255, 255, 255, 0.57);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 10px;
+    color: #6c3483;
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+.userName {
+    text-align: center;
+    font-size: 27px;
+    color: #0E6486;
+    letter-spacing: 6px;
+    text-shadow: 2px 2px black;
+}
+
+.piUsername {
+    color: black;
+    text-shadow: 2px 1px #57142F;
+    font-size: 23px;
+}
+
+.subPiUsername {
+    color: black;
+    text-shadow: 1px 1px white;
+    font-size: 17px;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-geometrico-verde-abstracto_23-2148374529.jpg?w=996&t=st=1663565609~exp=1663566209~hmac=10ccdd83f484ffb0054645bd02263372811f989616b5e5a47ac9c59192cec727);
+    background-size: cover;
+    border-radius: 20px;
+}

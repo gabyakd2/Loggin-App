@@ -1,4 +1,7 @@
 import axios from 'axios'
+export const GET_USERS = 'GET_USERS';
+export const GET_USERS_EMAIL = 'GET_USERS_EMAIL'
+
 
 export function getUsers(){
     return async function (dispatch){
@@ -8,4 +11,12 @@ export function getUsers(){
             payload: json.data
         })
     }
+}
+
+
+export function getUsersEmail(email){
+        return {
+            type: 'GET_USERS_EMAIL',
+            payload: email,
+        }
 }
