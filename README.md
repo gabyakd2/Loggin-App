@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Loggin App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Sobre la app
 
-In the project directory, you can run:
 
-### `npm start`
+La aplicación "Login App", es una aplicación en la cual te puedes loguear y une vez logueado, puedes visualizar información detallada, dependiendo del tipo de usuario. Esta app fue creada con las siguientes tecnologías:
+### • HTML
+### • Css
+### • JavaScript
+### • React Js
+### • Redux Js
+### • Firebase
+### • Universal Cookies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Se usó HTML, CSS para la maquetación de la web. React y Redux se utilizaron para la creación de componentes, manejo de estados globales y locales, utilizando distintos tipos de hooks. Con lo que respecta a firebase, lo usé para poder crear la información de los usuarios y luego, a través del método axios, poder consumir dicha información. Y por último utilice Universal Cookies debido a que cuando recargaba la página con la información, esta info se perdía. Con esa libreria pude solucionar dicho problema.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Problemas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Los problemas que tuve al comenzar la prueba fueron que los primeros endpoints enviados poseían el protocolo ssh, entonces para poder visualizar lo que contenían los endpoints descargue Ubuntu, pero al utilizarlo con los endpoints me daba un mensaje de error:
+### --ssh -i "astroTest1.pem" ubuntu@ec2-34-207-110-46.compute-1.amazonaws.com:8000/users/
+### Warning: Identity file astroTest1.pem not accessible: No such file or directory.--
 
-### `npm run build`
+### ssh: Could not resolve hostname ec2-34-207-110-46.compute-1.amazonaws.com:8000/users/: 
+### Name or service not known
+Traté de correr con la bandera p y me decia lo siguiente:
+### ssh -p "astroTest1.pem" ubuntu@ec2-34-207-110-46.compute-1.amazonaws.com:8000/users/ 
+### Bad port 'astroTest1.pem'
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Luego de esto me pasaron otros endpoints pero ahora con protocolo HTTP, el problema fue que con el primer endpoint me decía que no se podía acceder a la web y con el segundo endpoint fue que si pude acceder, por una sola vez, a la web, pero luego de 20 o 30 minutos no me volvió a dejar entrar, por lo que cuando hacia el pedido con axios en mi app se rompía porque no llegaba la información solicitada. Fue como si se hubiesen caído los links. Informo que los probé con varios navegadores y no hubo cambios algunos. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Solución
+Debido a los problemas comentados tuve que investigar y ver como poder hacer una api y me encontré con Firebase, cree un JSON y luego lo importé. Una vez hecho esto, Firebase me proporciono una URL con la información que establecí en mi JSON. De esta forma ya pude hacer los pedidos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instrucciones
+Para poder utilizar la aplicación se deben realizar los siguientes pasos:
+### * Clonar el repositorio.
+### * Pararse en la carpeta /loggin-app/ y ejecutar el comando 'npm install'.
+### * Una vez aplicado el comando, se instalaran todas las dependencias.
+### * Para poder loguearse, cree unos ejemplos para poder probar la aplicacion, que son los siguientes.
+{
+    email: roots@gmail.com
+    password: españa2022
+}
+{
+    email": gerente1@gmail.com
+    password": mc1990
+}
+{
+    email: gerente2@gmail.com
+    password: nt1992
+}
+{
+    email: cliente1@gmail.com
+    password: jo1996
+}
+{
+    email: cliente2@gmail.com
+    password: sb1998
+}
+{
+    email: cliente3@gmail.com
+    password: sh1995
+}
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### A continuación dejo la URL del endpoint
+https://accounts-cd8ab-default-rtdb.firebaseio.com/.json

@@ -11,9 +11,10 @@ h2 {
 
 .tittle {
     text-shadow: 1px 1px rgb(137, 78, 78);
+    margin-top: -60px;
 }
 
-img {
+.container img {
     width: 200px;
     border-radius: 50%;
 }
@@ -51,4 +52,72 @@ img {
     background-image: url(https://img.freepik.com/vector-gratis/fondo-geometrico-verde-abstracto_23-2148374529.jpg?w=996&t=st=1663565609~exp=1663566209~hmac=10ccdd83f484ffb0054645bd02263372811f989616b5e5a47ac9c59192cec727);
     background-size: cover;
     border-radius: 20px;
+}
+
+.noInfo h2{
+    width: 500px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.57);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 60px 10px 0px 10px;
+    border-radius: 25px;
+}
+
+.noInfo button {
+    color: white;
+    border: none;
+    outline: none;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 620px;
+    background-color: #6c3483;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 300px;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px black;
+    transition: 0.3s;
+    transition: all 400ms ease;
+}
+
+.linkNoInfo{
+    text-decoration: none;
+    color: white;
+}
+
+.noInfo button:hover {
+    box-shadow: 5px 5px black;
+    transform: translateY(-3%);
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.2);
+}
+
+.noInfo img {
+    border-radius: 30%;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logout {
+    border: none;
+    outline: none;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #6c3483;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 300px;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px black;
+    transition: 0.3s;
+    transition: all 400ms ease;
+}
+
+.linkh {
+    text-decoration: none;
+    color: white;
 }
